@@ -49,6 +49,10 @@ html, body {
     font-family: Roboto, Arial, sans-serif;
 }
 
+h6 {
+    color: #aaa;
+}
+
 header {
     background-color: #272727;
     height: 56px;
@@ -81,7 +85,7 @@ nav > .material-icons, .menu {
 }
 
 fieldset {
-    height: 56px;
+    height: 100%;
     width: 35%;
     margin-left: 15%;
     display: inline;
@@ -100,18 +104,31 @@ fieldset {
     box-sizing: border-box;
 }
 
+
+
 .bar {
-    width: 85%;
+    width: 90%;
     font-size: 1em;
     background: #131313;
 }
 
 .btn {
     float: right;
-    width: 15%;
+    position: absolute;
+    width: 10%;
     background-color: #383838;
     padding: 0;
+    text-align: center;
 }
+
+.btn i {
+    position: absolute;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 
 .main {
     width: 85%;
@@ -129,14 +146,19 @@ fieldset {
 }
 
 .vid > iframe {
-    width: 60em;
-    height: 33em;
+    width: 55vw;
+    height: 28vw;
 }
 
 .recommended {
     grid-column: 2;
     color: white;
     font-size: 1em;
+}
+
+#upnext{
+    display: flex;
+    justify-content: space-between;
 }
 
 .recommended h3 {
@@ -181,6 +203,8 @@ fieldset {
     padding-top: 0.5em;
 }
 
+
+
 #vid-actions {
     text-align: end;
     display: inline;
@@ -193,12 +217,14 @@ fieldset {
     margin: 0 1em 0 0;
     align-content: center;
     color: #aaa;
+    font-size: 0.9em;
+    /* font-weight: bolder; */
 }
 
 #vid-actions i {
     position: relative;
     font-size: 1.5em;
-    top: 8px;
+    top: 5px;
 }
 
 #vid-title {
@@ -211,3 +237,60 @@ fieldset {
     color: #aaa;
     display: inline;
 }
+
+#channel {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 7% 75% 18%;
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #383838;
+}
+
+#channel-pic {
+    text-align: center;
+    border-radius: 50%;
+    grid-column: 1;
+}
+
+#channel-info {
+    grid-column: 2;
+    display: block;
+}
+
+#channel-info h6{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+#channel-info p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+#channel-info span{
+    color: #aaa;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+.subscribe {
+    grid-column: 3;
+    position: relative;
+}
+
+.subscribe button {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    height: 3em;
+    transform: translate(-0%, -50%);
+    border: 0;
+    border-radius: 4%;
+    background-color: #f00;
+    color: white;
+    font-size: 1em;
+    font-family: Roboto, Arial, sans-serif;
+}
+
