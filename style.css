@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    background-color: #131313;
+    margin: 0;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+header {
+    background-color: #272727;
+    height: 56px;
+    width: 100%;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.menu, .yt-icon {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.yt-icon {
+    height: 24px;
+    padding-top: 16px;
+    margin: 0 16px;
+}
+
+nav {
+    width: 30%;
+}
+
+nav > .material-icons, .menu {
+    padding: 16px 1%;
+    margin: 0 16px;
+}
+
+fieldset {
+    height: 56px;
+    width: 35%;
+    margin-left: 15%;
+    display: inline;
+    position: relative;
+}
+
+.search {
+    color: #747474;
+    height: 30px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid #383838;
+    box-sizing: border-box;
+}
+
+.bar {
+    width: 85%;
+    font-size: 1em;
+    background: #131313;
+}
+
+.btn {
+    float: right;
+    width: 15%;
+    background-color: #383838;
+    padding: 0;
+}
+
+.main {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    grid-gap: 1em;
+    color: white;
+    text-align: start;
+}
+
+.vid {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.vid > iframe {
+    width: 60em;
+    height: 33em;
+}
+
+.recommended {
+    grid-column: 2;
+    color: white;
+    font-size: 1em;
+}
+
+.recommended h3 {
+    float: left;
+}
+
+#autoplay {
+    float: right;
+}
+
+.rec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;
+}
+
+.thumbnail {
+    grid-column:  1;
+    grid-row: 1;
+    width: 90%;
+}
+
+.thumb-info {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: start;
+    display: inline;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.thumb-title {
+    font-size: 0.9em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+
+.thumb-info > h6 {
+    font-size: 0.8em;
+    color: #aaa;
+    padding-top: 0.5em;
+}
+
+#vid-actions {
+    text-align: end;
+    display: inline;
+    float: right;
+}
+
+#vid-actions a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1em 0 0;
+    align-content: center;
+    color: #aaa;
+}
+
+#vid-actions i {
+    position: relative;
+    font-size: 1.5em;
+    top: 8px;
+}
+
+#vid-title {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    display: block;
+}
+
+#vid-views {
+    color: #aaa;
+    display: inline;
+}
